@@ -1,9 +1,9 @@
 {
-  "name": "logseq-plugin-charspacing",
+  "name": "logseq-plugin-charspacing-hack",
   "version": "1.1.9",
   "main": "dist/index.html",
   "logseq": {
-    "id": "_sethyuan-logseq-charspacing",
+    "id": "_sethyuan-logseq-charspacing-hack",
     "icon": "./icon.png"
   },
   "scripts": {

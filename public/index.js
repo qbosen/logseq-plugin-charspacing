@@ -84,6 +84,15 @@ function renderSpacing(el) {
     if (textNode.data !== text) {
       textNode.data = text
     }
+    
+    const quoteRegex = new RegExp("\"([^\"]+)\"","ig")
+    const qutoHtml = text.replace(quoteRegex, "<span class=\"myquote\">\"$1\"</span>")
+    
+    if(qutoHtml != text) {
+      const warp =document.createElement("span")
+      warp.innerHTML = qutoHtml;
+      textNode.replaceWith(warp)
+    }
   }
 }
 
